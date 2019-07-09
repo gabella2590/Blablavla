@@ -41,27 +41,9 @@ namespace Calculator
             double firstValue = double.Parse(textBox1.Text);
             double secondValue = double.Parse(textBox2.Text);
             double result;
-            switch (((Button)sender).Name)
-            {
-                case "button1":
-                    result = firstValue + secondValue;
-                    textBox3.Text = result.ToString();
-                    break;
-                case "button2":
-                    result = firstValue - secondValue;
-                    textBox3.Text = result.ToString();
-                    break;
-                case "button3":
-                    result = firstValue * secondValue;
-                    textBox3.Text = result.ToString();
-                    break;
-                case "button4":
-                    result = firstValue / secondValue;
-                    textBox3.Text = result.ToString();
-                    break;
-                default:
-                    throw new Exception("Неизвестная операция");
-            }
+            ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
+            result = calculator.Calculate(firstValue, secondValue);
+ 
             textBox3.Text = result.ToString();
         }
 
