@@ -19,33 +19,49 @@ namespace Calculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double firstvalue = double.Parse(textBox1.Text);
-            double secondvalue = double.Parse(textBox2.Text);
-            double result = firstvalue + secondvalue;
-            textBox3.Text = result.ToString();
+            Calculate(sender);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double firstvalue = double.Parse(textBox1.Text);
-            double secondvalue = double.Parse(textBox2.Text);
-            double result = firstvalue - secondvalue;
-            textBox3.Text = result.ToString();
+            Calculate(sender);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            double firstvalue = double.Parse(textBox1.Text);
-            double secondvalue = double.Parse(textBox2.Text);
-            double result = firstvalue * secondvalue;
-            textBox3.Text = result.ToString();
+            Calculate(sender);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            Calculate(sender);
+        }
+        void Calculate(object sender)
+        {
             double firstvalue = double.Parse(textBox1.Text);
             double secondvalue = double.Parse(textBox2.Text);
-            double result = firstvalue / secondvalue;
+            double result;
+            switch (((Button)sender).Name)
+            {
+                case "button1":
+                    result = firstvalue + secondvalue;
+                    textBox3.Text = result.ToString();
+                    break;
+                case "button2":
+                    result = firstvalue - secondvalue;
+                    textBox3.Text = result.ToString();
+                    break;
+                case "button3":
+                    result = firstvalue * secondvalue;
+                    textBox3.Text = result.ToString();
+                    break;
+                case "button4":
+                    result = firstvalue / secondvalue;
+                    textBox3.Text = result.ToString();
+                    break;
+                default:
+                    throw new Exception("Неизвестная операция");
+            }
             textBox3.Text = result.ToString();
         }
     }

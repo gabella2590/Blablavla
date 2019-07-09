@@ -41,7 +41,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(52, 157);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(198, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = true;
@@ -51,7 +51,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(303, 157);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(115, 23);
             this.button2.TabIndex = 1;
             this.button2.Text = "-";
             this.button2.UseVisualStyleBackColor = true;
@@ -59,9 +59,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(456, 157);
+            this.button3.Location = new System.Drawing.Point(424, 157);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(107, 23);
             this.button3.TabIndex = 2;
             this.button3.Text = "*";
             this.button3.UseVisualStyleBackColor = true;
@@ -69,9 +69,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(645, 157);
+            this.button4.Location = new System.Drawing.Point(572, 157);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(185, 23);
             this.button4.TabIndex = 3;
             this.button4.Text = "\\";
             this.button4.UseVisualStyleBackColor = true;
@@ -81,27 +81,28 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(52, 68);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(198, 22);
             this.textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(303, 68);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.Size = new System.Drawing.Size(228, 22);
             this.textBox2.TabIndex = 5;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(572, 68);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
+            this.textBox3.Size = new System.Drawing.Size(185, 22);
             this.textBox3.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Lime;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -111,7 +112,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Калькулятор";
             this.ResumeLayout(false);
             this.PerformLayout();
 
