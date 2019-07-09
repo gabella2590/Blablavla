@@ -38,31 +38,36 @@ namespace Calculator
         }
         void Calculate(object sender)
         {
-            double firstvalue = double.Parse(textBox1.Text);
-            double secondvalue = double.Parse(textBox2.Text);
+            double firstValue = double.Parse(textBox1.Text);
+            double secondValue = double.Parse(textBox2.Text);
             double result;
             switch (((Button)sender).Name)
             {
                 case "button1":
-                    result = firstvalue + secondvalue;
+                    result = firstValue + secondValue;
                     textBox3.Text = result.ToString();
                     break;
                 case "button2":
-                    result = firstvalue - secondvalue;
+                    result = firstValue - secondValue;
                     textBox3.Text = result.ToString();
                     break;
                 case "button3":
-                    result = firstvalue * secondvalue;
+                    result = firstValue * secondValue;
                     textBox3.Text = result.ToString();
                     break;
                 case "button4":
-                    result = firstvalue / secondvalue;
+                    result = firstValue / secondValue;
                     textBox3.Text = result.ToString();
                     break;
                 default:
                     throw new Exception("Неизвестная операция");
             }
             textBox3.Text = result.ToString();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
