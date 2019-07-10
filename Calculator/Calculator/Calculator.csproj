@@ -50,18 +50,23 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Addition.cs" />
-    <Compile Include="Substraction.cs" />
-    <Compile Include="Multiply.cs" />
-    <Compile Include="Divide.cs" />
-    <Compile Include="TwoArgumentsCalculator.cs" />
+    <Compile Include="OneArgumentCalc\COS.cs" />
+    <Compile Include="OneArgumentCalc\SIN.cs" />
+    <Compile Include="OneArgumentCalc\IOneArgumentInterface.cs" />
+    <Compile Include="OneArgumentCalc\OneArgumentCalculator.cs" />
+    <Compile Include="OneArgumentCalc\POW.cs" />
+    <Compile Include="TwoArgumentsCalc\Addition.cs" />
+    <Compile Include="TwoArgumentsCalc\Substraction.cs" />
+    <Compile Include="TwoArgumentsCalc\Multiply.cs" />
+    <Compile Include="TwoArgumentsCalc\Divide.cs" />
+    <Compile Include="TwoArgumentsCalc\TwoArgumentsCalculator.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ITwoArgumentsInterface.cs" />
+    <Compile Include="TwoArgumentsCalc\ITwoArgumentsInterface.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

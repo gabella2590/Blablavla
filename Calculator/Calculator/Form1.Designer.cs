@@ -38,6 +38,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.POW = new System.Windows.Forms.Button();
+            this.Sin = new System.Windows.Forms.Button();
+            this.Cos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Addition
@@ -128,12 +131,45 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Результат";
             // 
+            // POW
+            // 
+            this.POW.Location = new System.Drawing.Point(58, 96);
+            this.POW.Name = "POW";
+            this.POW.Size = new System.Drawing.Size(191, 43);
+            this.POW.TabIndex = 10;
+            this.POW.Text = "X^2";
+            this.POW.UseVisualStyleBackColor = true;
+            this.POW.Click += new System.EventHandler(this.OneArgCalc);
+            // 
+            // Sin
+            // 
+            this.Sin.Location = new System.Drawing.Point(310, 99);
+            this.Sin.Name = "Sin";
+            this.Sin.Size = new System.Drawing.Size(61, 39);
+            this.Sin.TabIndex = 11;
+            this.Sin.Text = "Sin";
+            this.Sin.UseVisualStyleBackColor = true;
+            this.Sin.Click += new System.EventHandler(this.OneArgCalc);
+            // 
+            // Cos
+            // 
+            this.Cos.Location = new System.Drawing.Point(442, 99);
+            this.Cos.Name = "Cos";
+            this.Cos.Size = new System.Drawing.Size(76, 39);
+            this.Cos.TabIndex = 12;
+            this.Cos.Text = "Cos";
+            this.Cos.UseVisualStyleBackColor = true;
+            this.Cos.Click += new System.EventHandler(this.OneArgCalc);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Lime;
+            this.BackColor = System.Drawing.Color.LimeGreen;
             this.ClientSize = new System.Drawing.Size(821, 248);
+            this.Controls.Add(this.Cos);
+            this.Controls.Add(this.Sin);
+            this.Controls.Add(this.POW);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -164,6 +200,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button POW;
+        private System.Windows.Forms.Button Sin;
+        private System.Windows.Forms.Button Cos;
     }
 }
 

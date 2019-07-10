@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculator.OneArgumentCalc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,13 +44,22 @@ namespace Calculator
             double result;
             ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
             result = calculator.Calculate(firstValue, secondValue);
- 
+
             textBox3.Text = result.ToString();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        void OneArgCalc(object sender, EventArgs e)
+        {
+            double Value = double.Parse(textBox1.Text);
+            double result;
+            IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculator(((Button)sender).Name);
+            result = calculator.Calculate(Value);
+            textBox3.Text = result.ToString();
         }
     }
 }
