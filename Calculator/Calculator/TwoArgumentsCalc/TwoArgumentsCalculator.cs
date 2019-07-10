@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculator.TwoArgumentsCalc;
+using System;
 
 namespace Calculator
 {
@@ -17,6 +18,12 @@ namespace Calculator
                 return new DivisionCalculator();
             case "PowXY":
                 return new PowXYCalculator();
+            case "Logxy":
+                return new LogxyCalculator();
+            case "Xpow1y":
+                return new Xpow1yCalculator();
+            case "MidMath":
+                return new MidMathCalculator();
             default:
                 throw new Exception("Неизвестная операция");
             }

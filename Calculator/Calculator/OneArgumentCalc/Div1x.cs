@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Calculator.OneArgumentCalc
 {
-    class CTG
+    public class Div1xCalculator : IOneArgumentCalculator
     {
+        public double Calculate(double firstValue)
+        {
+            return (1/firstValue);
+        }
     }
 }

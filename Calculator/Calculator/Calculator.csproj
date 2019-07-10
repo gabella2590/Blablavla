@@ -50,13 +50,27 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgumentCalc\ACOS.cs" />
+    <Compile Include="OneArgumentCalc\Atanx.cs" />
     <Compile Include="OneArgumentCalc\COS.cs" />
+    <Compile Include="OneArgumentCalc\ASIN.cs" />
+    <Compile Include="OneArgumentCalc\Ctanx.cs" />
+    <Compile Include="OneArgumentCalc\Div1x.cs" />
+    <Compile Include="OneArgumentCalc\Ln%28x%29.cs" />
+    <Compile Include="OneArgumentCalc\Log10x.cs" />
+    <Compile Include="OneArgumentCalc\Log2x.cs" />
+    <Compile Include="OneArgumentCalc\Minusx.cs" />
+    <Compile Include="OneArgumentCalc\Pow10x.cs" />
+    <Compile Include="OneArgumentCalc\Pow2x.cs" />
+    <Compile Include="OneArgumentCalc\Powex.cs" />
     <Compile Include="OneArgumentCalc\SIN.cs" />
     <Compile Include="OneArgumentCalc\IOneArgumentInterface.cs" />
     <Compile Include="OneArgumentCalc\OneArgumentCalculator.cs" />
     <Compile Include="OneArgumentCalc\POW.cs" />
     <Compile Include="OneArgumentCalc\TAN.cs" />
     <Compile Include="TwoArgumentsCalc\Addition.cs" />
+    <Compile Include="TwoArgumentsCalc\Logxy.cs" />
+    <Compile Include="TwoArgumentsCalc\MidMath.cs" />
     <Compile Include="TwoArgumentsCalc\Pow%28x,y%29.cs" />
     <Compile Include="TwoArgumentsCalc\Substraction.cs" />
     <Compile Include="TwoArgumentsCalc\Multiply.cs" />
@@ -71,6 +85,7 @@
     <Compile Include="TwoArgumentsCalc\ITwoArgumentsInterface.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TwoArgumentsCalc\Xpow1y.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
