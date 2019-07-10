@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator
 {
@@ -19,6 +15,8 @@ namespace Calculator
                 return new MultiplyCalculator();
             case "Division":
                 return new DivisionCalculator();
+            case "PowXY":
+                return new PowXYCalculator();
             default:
                 throw new Exception("Неизвестная операция");
             }

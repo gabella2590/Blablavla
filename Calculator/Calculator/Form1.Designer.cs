@@ -41,47 +41,50 @@
             this.POW = new System.Windows.Forms.Button();
             this.Sin = new System.Windows.Forms.Button();
             this.Cos = new System.Windows.Forms.Button();
+            this.PowXY = new System.Windows.Forms.Button();
+            this.Tan = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Addition
             // 
             this.Addition.Location = new System.Drawing.Point(52, 157);
             this.Addition.Name = "Addition";
-            this.Addition.Size = new System.Drawing.Size(198, 23);
+            this.Addition.Size = new System.Drawing.Size(45, 58);
             this.Addition.TabIndex = 0;
             this.Addition.Text = "+";
             this.Addition.UseVisualStyleBackColor = true;
-            this.Addition.Click += new System.EventHandler(this.button1_Click);
+            this.Addition.Click += new System.EventHandler(this.Calculate);
             // 
             // Substraction
             // 
-            this.Substraction.Location = new System.Drawing.Point(303, 157);
+            this.Substraction.Location = new System.Drawing.Point(103, 157);
             this.Substraction.Name = "Substraction";
-            this.Substraction.Size = new System.Drawing.Size(115, 23);
+            this.Substraction.Size = new System.Drawing.Size(42, 58);
             this.Substraction.TabIndex = 1;
             this.Substraction.Text = "-";
             this.Substraction.UseVisualStyleBackColor = true;
-            this.Substraction.Click += new System.EventHandler(this.button2_Click);
+            this.Substraction.Click += new System.EventHandler(this.Calculate);
             // 
             // Multiply
             // 
-            this.Multiply.Location = new System.Drawing.Point(424, 157);
+            this.Multiply.Location = new System.Drawing.Point(151, 157);
             this.Multiply.Name = "Multiply";
-            this.Multiply.Size = new System.Drawing.Size(107, 23);
+            this.Multiply.Size = new System.Drawing.Size(53, 58);
             this.Multiply.TabIndex = 2;
             this.Multiply.Text = "*";
             this.Multiply.UseVisualStyleBackColor = true;
-            this.Multiply.Click += new System.EventHandler(this.button3_Click);
+            this.Multiply.Click += new System.EventHandler(this.Calculate);
             // 
             // Division
             // 
-            this.Division.Location = new System.Drawing.Point(572, 157);
+            this.Division.Location = new System.Drawing.Point(210, 157);
             this.Division.Name = "Division";
-            this.Division.Size = new System.Drawing.Size(185, 23);
+            this.Division.Size = new System.Drawing.Size(39, 58);
             this.Division.TabIndex = 3;
             this.Division.Text = "\\";
             this.Division.UseVisualStyleBackColor = true;
-            this.Division.Click += new System.EventHandler(this.button4_Click);
+            this.Division.Click += new System.EventHandler(this.Calculate);
             // 
             // textBox1
             // 
@@ -133,9 +136,9 @@
             // 
             // POW
             // 
-            this.POW.Location = new System.Drawing.Point(58, 96);
+            this.POW.Location = new System.Drawing.Point(572, 99);
             this.POW.Name = "POW";
-            this.POW.Size = new System.Drawing.Size(191, 43);
+            this.POW.Size = new System.Drawing.Size(185, 52);
             this.POW.TabIndex = 10;
             this.POW.Text = "X^2";
             this.POW.UseVisualStyleBackColor = true;
@@ -143,9 +146,9 @@
             // 
             // Sin
             // 
-            this.Sin.Location = new System.Drawing.Point(310, 99);
+            this.Sin.Location = new System.Drawing.Point(303, 99);
             this.Sin.Name = "Sin";
-            this.Sin.Size = new System.Drawing.Size(61, 39);
+            this.Sin.Size = new System.Drawing.Size(115, 52);
             this.Sin.TabIndex = 11;
             this.Sin.Text = "Sin";
             this.Sin.UseVisualStyleBackColor = true;
@@ -153,20 +156,52 @@
             // 
             // Cos
             // 
-            this.Cos.Location = new System.Drawing.Point(442, 99);
+            this.Cos.Location = new System.Drawing.Point(424, 99);
             this.Cos.Name = "Cos";
-            this.Cos.Size = new System.Drawing.Size(76, 39);
+            this.Cos.Size = new System.Drawing.Size(107, 52);
             this.Cos.TabIndex = 12;
             this.Cos.Text = "Cos";
             this.Cos.UseVisualStyleBackColor = true;
             this.Cos.Click += new System.EventHandler(this.OneArgCalc);
+            // 
+            // PowXY
+            // 
+            this.PowXY.Location = new System.Drawing.Point(576, 166);
+            this.PowXY.Name = "PowXY";
+            this.PowXY.Size = new System.Drawing.Size(180, 48);
+            this.PowXY.TabIndex = 13;
+            this.PowXY.Text = "x^y";
+            this.PowXY.UseVisualStyleBackColor = true;
+            this.PowXY.Click += new System.EventHandler(this.Calculate);
+            // 
+            // Tan
+            // 
+            this.Tan.Location = new System.Drawing.Point(305, 163);
+            this.Tan.Name = "Tan";
+            this.Tan.Size = new System.Drawing.Size(112, 51);
+            this.Tan.TabIndex = 14;
+            this.Tan.Text = "Tg";
+            this.Tan.UseVisualStyleBackColor = true;
+            this.Tan.Click += new System.EventHandler(this.OneArgCalc);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(424, 163);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 51);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Ctg";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LimeGreen;
-            this.ClientSize = new System.Drawing.Size(821, 248);
+            this.ClientSize = new System.Drawing.Size(821, 475);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Tan);
+            this.Controls.Add(this.PowXY);
             this.Controls.Add(this.Cos);
             this.Controls.Add(this.Sin);
             this.Controls.Add(this.POW);
@@ -203,6 +238,9 @@
         private System.Windows.Forms.Button POW;
         private System.Windows.Forms.Button Sin;
         private System.Windows.Forms.Button Cos;
+        private System.Windows.Forms.Button PowXY;
+        private System.Windows.Forms.Button Tan;
+        private System.Windows.Forms.Button button1;
     }
 }
 

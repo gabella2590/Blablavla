@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator.OneArgumentCalc
 {
@@ -18,6 +14,8 @@ namespace Calculator.OneArgumentCalc
                     return new SINCalculator();
                 case "Cos":
                     return new COSCalculator();
+                case "Tan":
+                    return new TANCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
             }

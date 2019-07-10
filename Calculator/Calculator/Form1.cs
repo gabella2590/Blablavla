@@ -1,12 +1,5 @@
 ﻿using Calculator.OneArgumentCalc;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Calculator
@@ -18,26 +11,20 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            Calculate(sender);
+
+        }
+        void OneArgCalc(object sender, EventArgs e)
+        {
+            double Value = double.Parse(textBox1.Text);
+            double result;
+            IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculator(((Button)sender).Name);
+            result = calculator.Calculate(Value);
+            textBox3.Text = result.ToString();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Calculate(sender);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Calculate(sender);
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Calculate(sender);
-        }
-        void Calculate(object sender)
+        private void Calculate(object sender, EventArgs e)
         {
             double firstValue = double.Parse(textBox1.Text);
             double secondValue = double.Parse(textBox2.Text);
@@ -45,20 +32,6 @@ namespace Calculator
             ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
             result = calculator.Calculate(firstValue, secondValue);
 
-            textBox3.Text = result.ToString();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        void OneArgCalc(object sender, EventArgs e)
-        {
-            double Value = double.Parse(textBox1.Text);
-            double result;
-            IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculator(((Button)sender).Name);
-            result = calculator.Calculate(Value);
             textBox3.Text = result.ToString();
         }
     }

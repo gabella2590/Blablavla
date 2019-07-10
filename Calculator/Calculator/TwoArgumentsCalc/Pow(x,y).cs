@@ -1,12 +1,13 @@
-﻿
+﻿using System;
+
 
 namespace Calculator
 {
-    public class DivisionCalculator:ITwoArgumentsCalculator
+    public class PowXYCalculator : ITwoArgumentsCalculator
     {
         public double Calculate(double firstValue, double secondValue)
         {
-            double result = firstValue / secondValue;
+            double result = Math.Pow(firstValue, secondValue);
             return result;
         }
     }
