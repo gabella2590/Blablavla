@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-
+using System;
 
 namespace Calculator.Tests.TwoArgumentsCalc
 {
@@ -19,6 +19,15 @@ namespace Calculator.Tests.TwoArgumentsCalc
             DivisionCalculator calculator = new DivisionCalculator();
             double actual = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, actual);
+
+        }
+        [Test]
+        public void DivisionCalculator()
+            
+
+        {
+            DivisionCalculator calculator = new DivisionCalculator();
+            Assert.Throws<Exception>(()=>calculator.Calculate(1,0));
 
         }
     }

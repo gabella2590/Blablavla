@@ -1,5 +1,6 @@
 ﻿using Calculator.TwoArgumentsCalc;
 using NUnit.Framework;
+using System;
 
 namespace Calculator.Tests.TwoArgumentsCalc
 {
@@ -10,7 +11,7 @@ namespace Calculator.Tests.TwoArgumentsCalc
         [TestCase(4, 2, 2)]
         [TestCase(9, 3, 2)]
         [TestCase(27, 3, 3)]
-        public void DivisionCalculator(
+        public void LogxyCalculator(
             double firstValue,
             double secondValue,
             double expected)
@@ -20,6 +21,15 @@ namespace Calculator.Tests.TwoArgumentsCalc
             LogxyCalculator calculator = new LogxyCalculator();
             double actual = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, actual);
+
+        }
+        [Test]
+        public void LogxyCalculator()
+
+
+        {
+            LogxyCalculator calculator = new LogxyCalculator();
+            Assert.Throws<Exception>(() => calculator.Calculate(1, 0));
 
         }
     }

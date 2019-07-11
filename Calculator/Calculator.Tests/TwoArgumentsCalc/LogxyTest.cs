@@ -1,5 +1,6 @@
 ﻿using Calculator.TwoArgumentsCalc;
 using NUnit.Framework;
+using System;
 
 
 namespace Calculator.Tests.TwoArgumentsCalc

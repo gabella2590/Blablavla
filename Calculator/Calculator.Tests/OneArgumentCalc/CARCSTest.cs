@@ -1,5 +1,6 @@
 ﻿using Calculator.OneArgumentCalc;
 using NUnit.Framework;
+using System;
 
 
 namespace Calculator.Tests.OneArgumentCalc
@@ -17,6 +18,15 @@ namespace Calculator.Tests.OneArgumentCalc
             ASINCalculator calculator = new ASINCalculator();
             double actual = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actual, 0.001);
+
+        }
+        [Test]
+        public void ASINCalculator()
+
+
+        {
+            ASINCalculator calculator = new ASINCalculator();
+            Assert.Throws<Exception>(() => calculator.Calculate(2));
 
         }
     }

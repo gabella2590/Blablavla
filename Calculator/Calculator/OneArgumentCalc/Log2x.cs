@@ -10,6 +10,10 @@ namespace Calculator.OneArgumentCalc
     {
         public double Calculate(double firstValue)
         {
+            if (firstValue == 0)
+            {
+                throw new Exception("Аргумент логарифма не равен нулю");
+            }
             return Math.Log(2,firstValue);
         }
     }

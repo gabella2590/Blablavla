@@ -1,6 +1,6 @@
 ﻿using Calculator.OneArgumentCalc;
 using NUnit.Framework;
-
+using System;
 
 namespace Calculator.Tests.OneArgumentCalc
 {
@@ -17,6 +17,15 @@ namespace Calculator.Tests.OneArgumentCalc
             ACOSCalculator calculator = new ACOSCalculator();
             double actual = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actual, 0.001);
+
+        }
+        [Test]
+        public void ACOSCalculator()
+
+
+        {
+            ACOSCalculator calculator = new ACOSCalculator();
+            Assert.Throws<Exception>(() => calculator.Calculate(2));
 
         }
     }

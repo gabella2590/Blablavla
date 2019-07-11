@@ -23,5 +23,14 @@ namespace Calculator.Tests.OneArgumentCalc
             Assert.AreEqual(expected, actual, 0.001);
 
         }
+        [Test]
+        public void Log2xCalculator()
+
+
+        {
+            Log2xCalculator calculator = new Log2xCalculator();
+            Assert.Throws<Exception>(() => calculator.Calculate(0));
+
+        }
     }
 }

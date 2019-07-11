@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator.TwoArgumentsCalc
 {
@@ -10,7 +6,11 @@ namespace Calculator.TwoArgumentsCalc
         {
             public double Calculate(double firstValue, double secondValue)
             {
-                return Math.Log(firstValue,secondValue);
+            if (secondValue == 0)
+            {
+                throw new Exception("Основание алгоритма не равно нулю");
+            }
+            return Math.Log(firstValue,secondValue);
             }        
     }
 }
