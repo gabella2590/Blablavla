@@ -1,9 +1,5 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 
 namespace Calculator.Tests.TwoArgumentsCalc
@@ -15,7 +11,7 @@ namespace Calculator.Tests.TwoArgumentsCalc
 
         public void AdditionCalculator()
         {
-            ITwoArgumentsCalculator calculator = new AdditionCalculator();
+            AdditionCalculator calculator = new AdditionCalculator();
             double actual = calculator.Calculate(1, 1);
             Assert.AreEqual(2,actual);
 

@@ -1,16 +1,11 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Calculator.Tests.OneArgumentCalc
+
+namespace Calculator.Tests.TwoArgumentsCalc
 {
     [TestFixture]
-    public class DivisionTest
+    public class CDivTest
     {
-        [Test]
         [TestCase(0, 1, 0)]
         [TestCase(3, 3, 1)]
         [TestCase(-7, 7, -1)]
@@ -21,7 +16,7 @@ namespace Calculator.Tests.OneArgumentCalc
 
 
         {
-            ITwoArgumentsCalculator calculator = new DivisionCalculator();
+            DivisionCalculator calculator = new DivisionCalculator();
             double actual = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, actual);
 
