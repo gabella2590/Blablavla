@@ -1,36 +1,29 @@
 ﻿using Calculator.OneArgumentCalc;
 using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator.Tests.OneArgumentCalc
 {
     [TestFixture]
-    public class CLog2xTest
+    public class Log10xTests
     {
-        [TestCase(4, 0.5)]
-        [TestCase(2, 1)]
-        [TestCase(6, 0.386)]
-        public void Log2xCalculator(
+        [TestCase(10, 1)]
+        [TestCase(100, 0.5)]
+        [TestCase(200, 0.434)]
+        public void Log10xCalculator(
             double firstValue,
             double expected)
         {
-            Log2xCalculator calculator = new Log2xCalculator();
+            Log10xCalculator calculator = new Log10xCalculator();
             double actual = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actual, 0.001);
-
         }
         [Test]
-        public void Log2xCalculator()
-
+        public void Log10xCalculator()
 
         {
-            Log2xCalculator calculator = new Log2xCalculator();
+            Log10xCalculator calculator = new Log10xCalculator();
             Assert.Throws<Exception>(() => calculator.Calculate(0));
-
         }
     }
 }

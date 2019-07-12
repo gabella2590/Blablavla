@@ -3,22 +3,21 @@
 namespace Calculator.Tests.TwoArgumentsCalc
 {
     [TestFixture]
-    public class CAddTest
+    public class MultiplyTests
     {
         [Test]
-        [TestCase(1, 1, 2)]
-        [TestCase(3, 3, 6)]
-        [TestCase(7, 7, 14)]
-        public void AdditionCalculator(
+        [TestCase(2, 1, 2)]
+        [TestCase(3, 3, 9)]
+        [TestCase(-7, 7, -49)]
+        public void MultiplyCalculator(
             double firstValue,
             double secondValue,
             double expected)
+
         {
-            AdditionCalculator calculator = new AdditionCalculator();
+            MultiplyCalculator calculator = new MultiplyCalculator();
             double actual = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, actual);
-
         }
     }
 }
-

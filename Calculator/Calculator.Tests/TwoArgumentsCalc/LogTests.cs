@@ -5,7 +5,7 @@ using System;
 namespace Calculator.Tests.TwoArgumentsCalc
 {
     [TestFixture]
-    public class CLogTest
+    public class LogTests
     {
         [Test]
         [TestCase(4, 2, 2)]
@@ -16,7 +16,6 @@ namespace Calculator.Tests.TwoArgumentsCalc
             double secondValue,
             double expected)
 
-
         {
             LogxyCalculator calculator = new LogxyCalculator();
             double actual = calculator.Calculate(firstValue, secondValue);
@@ -26,11 +25,9 @@ namespace Calculator.Tests.TwoArgumentsCalc
         [Test]
         public void LogxyCalculator()
 
-
         {
             LogxyCalculator calculator = new LogxyCalculator();
             Assert.Throws<Exception>(() => calculator.Calculate(1, 0));
-
         }
     }
 }

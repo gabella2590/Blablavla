@@ -9,27 +9,18 @@ using System.Threading.Tasks;
 namespace Calculator.Tests.OneArgumentCalc
 {
     [TestFixture]
-    public class CLog10xTest
+    public class CtanxTests
     {
-        [TestCase(10, 1)]
-        [TestCase(100, 0.5)]
-        [TestCase(200, 0.434)]
-        public void Log10xCalculator(
+        [TestCase(1, 0.642)]
+        [TestCase(2, -0.457)]
+        [TestCase(4, 0.863)]
+        public void CtanxCalculator(
             double firstValue,
             double expected)
         {
-            Log10xCalculator calculator = new Log10xCalculator();
+            CtanxCalculator calculator = new CtanxCalculator();
             double actual = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actual, 0.001);
-
-        }
-        [Test]
-        public void Log10xCalculator()
-
-
-        {
-            Log10xCalculator calculator = new Log10xCalculator();
-            Assert.Throws<Exception>(() => calculator.Calculate(0));
 
         }
     }

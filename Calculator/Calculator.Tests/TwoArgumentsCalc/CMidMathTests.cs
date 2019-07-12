@@ -1,26 +1,22 @@
-﻿using NUnit.Framework;
-
+﻿using Calculator.TwoArgumentsCalc;
+using NUnit.Framework;
 
 namespace Calculator.Tests.TwoArgumentsCalc
 {
     [TestFixture]
-    public class CMulTest
+    public class CMidMathTests
     {
-        [Test]
-        [TestCase(2, 1, 2)]
-        [TestCase(3, 3, 9)]
-        [TestCase(-7, 7, -49)]
-        public void MultiplyCalculator(
+        [TestCase(5, 1, 3)]
+        [TestCase(3, 3, 3)]
+        [TestCase(5, 7, 6)]
+        public void MidMathCalculator(
             double firstValue,
             double secondValue,
             double expected)
-
-
         {
-            MultiplyCalculator calculator = new MultiplyCalculator();
+            MidMathCalculator calculator = new MidMathCalculator();
             double actual = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, actual);
-
         }
     }
 }

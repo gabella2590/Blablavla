@@ -2,10 +2,10 @@
 
 namespace Calculator
 {
-/// <summary>
-/// result of addition x and y
-/// </summary>
-    public class AdditionCalculator:ITwoArgumentsCalculator
+    /// <summary>
+    /// result of addition x and y
+    /// </summary>
+    public class AdditionCalculator : ITwoArgumentsCalculator
     {
         public double Calculate(double firstValue, double secondValue)
         {

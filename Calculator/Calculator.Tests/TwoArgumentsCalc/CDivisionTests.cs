@@ -4,7 +4,7 @@ using System;
 namespace Calculator.Tests.TwoArgumentsCalc
 {
     [TestFixture]
-    public class CDivTest
+    public class CDivisionTests
     {
         [TestCase(0, 1, 0)]
         [TestCase(3, 3, 1)]
@@ -13,7 +13,6 @@ namespace Calculator.Tests.TwoArgumentsCalc
             double firstValue,
             double secondValue,
             double expected)
-
 
         {
             DivisionCalculator calculator = new DivisionCalculator();
@@ -24,11 +23,9 @@ namespace Calculator.Tests.TwoArgumentsCalc
         [Test]
         public void DivisionCalculator()
             
-
         {
             DivisionCalculator calculator = new DivisionCalculator();
             Assert.Throws<Exception>(()=>calculator.Calculate(1,0));
-
         }
     }
 }

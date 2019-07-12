@@ -1,20 +1,16 @@
 ﻿using NUnit.Framework;
 
-
 namespace Calculator.Tests.TwoArgumentsCalc
 {
     [TestFixture]
-    public class CDivisionTest
+    public class MultiplicationTests
     {
         [Test]
-
-        public void DivisionCalculator()
-
+        public void MultiplyCalculator()
         {
-            DivisionCalculator calculator = new DivisionCalculator();
+            MultiplyCalculator calculator = new MultiplyCalculator();
             double actual = calculator.Calculate(4, 2);
-            Assert.AreEqual(2, actual);
-
+            Assert.AreEqual(8, actual);
         }
     }
 }

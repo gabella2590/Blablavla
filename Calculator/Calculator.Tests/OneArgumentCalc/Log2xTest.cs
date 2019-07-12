@@ -5,28 +5,25 @@ using System;
 namespace Calculator.Tests.OneArgumentCalc
 {
     [TestFixture]
-    public class CARCCTest
+    public class Log2xTest
     {
-        [TestCase(1, 0)]
-        [TestCase(0, 1.571)]
-        [TestCase(0.5, 1.047)]
-        public void ACOSCalculator(
+        [TestCase(4, 0.5)]
+        [TestCase(2, 1)]
+        [TestCase(6, 0.386)]
+        public void Log2xCalculator(
             double firstValue,
             double expected)
         {
-            ACOSCalculator calculator = new ACOSCalculator();
+            Log2xCalculator calculator = new Log2xCalculator();
             double actual = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actual, 0.001);
-
         }
         [Test]
-        public void ACOSCalculator()
-
+        public void Log2xCalculator()
 
         {
-            ACOSCalculator calculator = new ACOSCalculator();
-            Assert.Throws<Exception>(() => calculator.Calculate(2));
-
+            Log2xCalculator calculator = new Log2xCalculator();
+            Assert.Throws<Exception>(() => calculator.Calculate(0));
         }
     }
 }

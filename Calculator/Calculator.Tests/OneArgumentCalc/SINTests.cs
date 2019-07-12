@@ -1,27 +1,21 @@
 ﻿using Calculator.OneArgumentCalc;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator.Tests.OneArgumentCalc
 {
     [TestFixture]
-    public class Cpow2xTest
+    public class SINTests
     {
-        [TestCase(1, 2)]
-        [TestCase(2, 4)]
-        [TestCase(0, 1)]
-        public void Pow2xCalculator(
+        [TestCase(1, 0.841)]
+        [TestCase(0, 0)]
+        [TestCase(0.5, 0.479)]
+        public void SINCalculator(
             double firstValue,
             double expected)
         {
-            Pow2xCalculator calculator = new Pow2xCalculator();
+            SINCalculator calculator = new SINCalculator();
             double actual = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actual, 0.001);
-
         }
     }
 }

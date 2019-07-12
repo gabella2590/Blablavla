@@ -9,7 +9,7 @@
     {
         public double Calculate(double firstValue)
         {
-            return  (-firstValue);
+            return -firstValue;
         }
     }
 }

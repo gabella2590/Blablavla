@@ -1,21 +1,19 @@
 ﻿using Calculator.TwoArgumentsCalc;
 using NUnit.Framework;
-
+using System;
 
 namespace Calculator.Tests.TwoArgumentsCalc
 {
     [TestFixture]
-    public class MidMathTest
+    public class LogxyTests
     {
         [Test]
-
-        public void MidMathCalculator()
+        public void LogxyCalculator()
 
         {
-            MidMathCalculator calculator = new MidMathCalculator();
+            LogxyCalculator calculator = new LogxyCalculator();
             double actual = calculator.Calculate(4, 2);
-            Assert.AreEqual(3, actual);
-
+            Assert.AreEqual(2, actual);
         }
     }
 }

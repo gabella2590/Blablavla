@@ -44,7 +44,7 @@ namespace Calculator.OneArgumentCalc
                 case "Minusx":
                     return new MinusxCalculator();
                 case "Div1x":
-                    return new Div1xCalculator();
+                    return new Division1xCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
             }

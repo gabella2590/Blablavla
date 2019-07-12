@@ -1,15 +1,11 @@
 ﻿using Calculator.OneArgumentCalc;
 using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator.Tests.OneArgumentCalc
 {
     [TestFixture]
-    public class CMinusxTest
+    public class MinusXTest
     {
         [TestCase(1, -1)]
         [TestCase(2, -2)]
@@ -21,7 +17,6 @@ namespace Calculator.Tests.OneArgumentCalc
             MinusxCalculator calculator = new MinusxCalculator();
             double actual = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actual, 0.001);
-
         }
     }
 }

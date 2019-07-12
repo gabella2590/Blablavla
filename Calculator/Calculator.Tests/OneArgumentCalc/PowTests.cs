@@ -1,22 +1,22 @@
 ﻿using Calculator.OneArgumentCalc;
 using NUnit.Framework;
+using System;
 
 namespace Calculator.Tests.OneArgumentCalc
 {
     [TestFixture]
-    public class CDiv1xTest
+    public class PowTests
     {
-        [TestCase(1, 1)]
-        [TestCase(2, 0.5)]
-        [TestCase(4, 0.25)]
-        public void Div1xCalculator(
+        [TestCase(2, 4)]
+        [TestCase(3, 9)]
+        [TestCase(0, 0)]
+        public void POWCalculator(
             double firstValue,
             double expected)
         {
-            Div1xCalculator calculator = new Div1xCalculator();
+            POWCalculator calculator = new POWCalculator();
             double actual = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actual, 0.001);
-
         }
     }
 }

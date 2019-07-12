@@ -6,7 +6,7 @@ using System;
 namespace Calculator.Tests.OneArgumentCalc
 {
     [TestFixture]
-    public class CARCSINTest
+    public class ASINTests
     {
         [TestCase(1, 1.571)]
         [TestCase(0, 0)]
@@ -18,16 +18,12 @@ namespace Calculator.Tests.OneArgumentCalc
             ASINCalculator calculator = new ASINCalculator();
             double actual = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actual, 0.001);
-
         }
         [Test]
         public void ASINCalculator()
-
-
         {
             ASINCalculator calculator = new ASINCalculator();
             Assert.Throws<Exception>(() => calculator.Calculate(2));
-
         }
     }
 }

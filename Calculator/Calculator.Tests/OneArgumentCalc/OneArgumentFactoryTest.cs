@@ -1,14 +1,10 @@
 ﻿using Calculator.OneArgumentCalc;
 using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator.Tests.OneArgumentCalc
 {
-    class OneArgFactTest
+    class OneArgumentFactoryTest
     {
         [TestCase("POW", typeof(POWCalculator))]
         [TestCase("Sin", typeof(SINCalculator))]
@@ -25,7 +21,7 @@ namespace Calculator.Tests.OneArgumentCalc
         [TestCase("Pow2x", typeof(Pow2xCalculator))]
         [TestCase("Pow10x", typeof(Pow10xCalculator))]
         [TestCase("Minusx", typeof(MinusxCalculator))]
-        [TestCase("Div1x", typeof(Div1xCalculator))]
+        [TestCase("Div1x", typeof(Division1xCalculator))]
 
         public void CalculateTest(string name, Type type)
 

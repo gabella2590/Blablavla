@@ -6,7 +6,7 @@ namespace Calculator.OneArgumentCalc
          /// </summary>
          /// <param name="firstValue"></param>
          /// <returns></returns>
-    public class Div1xCalculator : IOneArgumentCalculator
+    public class Division1xCalculator : IOneArgumentCalculator
     {
         public double Calculate(double firstValue)
         {

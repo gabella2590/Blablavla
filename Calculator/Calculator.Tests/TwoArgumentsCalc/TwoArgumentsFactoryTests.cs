@@ -5,7 +5,7 @@ using System;
 namespace Calculator.Tests.OneArgumentCalc
 {   
     [TestFixture]
-    class TwoArgsFactTest
+    class TwoArgumentsFactoryTests
     {
         [TestCase("Division", typeof(DivisionCalculator))]
         [TestCase("Addition", typeof(AdditionCalculator))]
