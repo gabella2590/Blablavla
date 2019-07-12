@@ -4,6 +4,11 @@
 
 namespace Calculator.OneArgumentCalc
 {
+    /// <summary>
+    /// function count power x of e
+    /// </summary>
+    /// <param name="firstValue"></param>
+    /// <returns></returns>
     public class PowexCalculator : IOneArgumentCalculator
     {
         public double Calculate(double firstValue)

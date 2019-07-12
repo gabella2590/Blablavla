@@ -1,11 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Calculator.TwoArgumentsCalc
 {
+    /// <summary>
+    /// function count x in power of 1/y
+    /// </summary>
+    /// <param name="firstValue"></param>
+    /// <returns></returns>
     public class Xpow1yCalculator : ITwoArgumentsCalculator
     {
         public double Calculate(double firstValue, double secondValue)

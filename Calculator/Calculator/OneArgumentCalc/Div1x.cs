@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace Calculator.OneArgumentCalc
-{
+{        /// <summary>
+         /// function count 1 divided on x
+         /// </summary>
+         /// <param name="firstValue"></param>
+         /// <returns></returns>
     public class Div1xCalculator : IOneArgumentCalculator
     {
         public double Calculate(double firstValue)

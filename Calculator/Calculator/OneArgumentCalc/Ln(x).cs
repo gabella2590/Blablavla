@@ -1,11 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator.OneArgumentCalc
 {
+    /// <summary>
+    /// function count LN using  x as argument
+    /// </summary>
+    /// <param name="firstValue"></param>
+    /// <returns></returns>
     public class LnxCalculator : IOneArgumentCalculator
     {
         public double Calculate(double firstValue)

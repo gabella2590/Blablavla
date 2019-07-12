@@ -1,11 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Calculator.OneArgumentCalc
 {
+        /// <summary>
+        /// function count ctan for x
+        /// </summary>
+        /// <param name="firstValue"></param>
+        /// <returns></returns>
     public class CtanxCalculator : IOneArgumentCalculator
     {
         public double Calculate(double firstValue)

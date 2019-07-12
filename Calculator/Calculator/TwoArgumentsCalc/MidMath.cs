@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace Calculator.TwoArgumentsCalc
 {
+    /// <summary>
+    /// function count average arithmetic mean
+    /// </summary>
+    /// <param name="firstValue"></param>
+    /// <returns></returns>
     public class MidMathCalculator : ITwoArgumentsCalculator
     {
         public double Calculate(double firstValue, double secondValue)

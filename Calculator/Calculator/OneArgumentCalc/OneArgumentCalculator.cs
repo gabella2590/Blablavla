@@ -2,6 +2,11 @@
 
 namespace Calculator.OneArgumentCalc
 {
+    /// <summary>
+    /// fabric using different classes to count one argument operations
+    /// </summary>
+    /// <param name="firstValue"></param>
+    /// <returns></returns>
     public static class OneArgumentFactory
     {
         public static IOneArgumentCalculator CreateCalculator(string name)
