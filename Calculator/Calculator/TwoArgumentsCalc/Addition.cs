@@ -2,11 +2,9 @@
 
 namespace Calculator
 {
-    /// <summary>
-    /// function count sum of x and y
-    /// </summary>
-    /// <param name="firstValue"></param>
-    /// <returns></returns>
+/// <summary>
+/// result of addition x and y
+/// </summary>
     public class AdditionCalculator:ITwoArgumentsCalculator
     {
         public double Calculate(double firstValue, double secondValue)

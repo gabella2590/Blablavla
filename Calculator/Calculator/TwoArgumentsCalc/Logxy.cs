@@ -5,8 +5,7 @@ namespace Calculator.TwoArgumentsCalc
     /// <summary>
     /// function count log of x using y as argument
     /// </summary>
-    /// <param name="firstValue"></param>
-    /// <returns></returns>
+
     public class LogxyCalculator : ITwoArgumentsCalculator
         {
             public double Calculate(double firstValue, double secondValue)

@@ -6,8 +6,6 @@ namespace Calculator
     /// <summary>
     /// fabric using different classes of two arguments
     /// </summary>
-    /// <param name="firstValue"></param>
-    /// <returns></returns>
     public static class TwoArgumentsFactory
     {
     public static ITwoArgumentsCalculator CreateCalculator(string name)
